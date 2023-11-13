@@ -102,9 +102,9 @@ browsers. For best results, use Google Chrome.</canvas>
 	<input id="startButton" type="button" onclick="startStop()" value="Start">
 </div>
 <div>
-	Tracer Begin X: <input type="number" id="tracerBeginX" value=0 onchange="tracerChange()" width="1" style="max-width: 3.5em;">
-	Tracer Begin Y: <input type="number" id="tracerBeginY" value=100 onchange="tracerChange()" style="max-width: 3.5em;">
-	Tracer Spread%: <input type="range" id="tracerSpread" min="0" max="100" step="0.5" value=100 onchange="tracerChange()" style="max-width: 3.5em;">
+	Tracer Begin X: <input type="number" id="tracerBeginX" value=57 onchange="tracerChange()" width="1" style="max-width: 3.5em;">
+	Tracer Begin Y: <input type="number" id="tracerBeginY" value=40 onchange="tracerChange()" style="max-width: 3.5em;">
+	Tracer Spread%: <input type="range" id="tracerSpread" min="0" max="100" step="0.5" value=33 onchange="tracerChange()" style="max-width: 3.5em;">
 </div>
 <div>
 	Flow speed = <span id="speedValue">0.100</span> 
@@ -141,7 +141,7 @@ browsers. For best results, use Google Chrome.</canvas>
 <div style="margin-top:4px">
 	<!--<input id="pixelCheck" type="checkbox" checked onchange="resetTimer()">Use pixel graphics-->
 	Show:
-	<input id="tracerCheck" type="checkbox" onchange="initTracers()">Tracers
+	<input id="tracerCheck" type="checkbox" onchange="initTracers()" checked>Tracers
 	<input id="flowlineCheck" type="checkbox" onchange="paintCanvas()">Flowlines
 	<input id="forceCheck" type="checkbox" onchange="paintCanvas()">Force on barriers
 	<input id="sensorCheck" type="checkbox" onchange="paintCanvas()">Sensor
@@ -753,6 +753,7 @@ Some very old browsers may not even be able to display the slider controls.</p>
 		}
 		paintCanvas();
 	}
+	initTracers()
 
 	// Paint the canvas:
 	function paintCanvas() {
