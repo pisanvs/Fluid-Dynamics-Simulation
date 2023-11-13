@@ -553,7 +553,7 @@ Some very old browsers may not even be able to display the slider controls.</p>
 		}
 	}
 
-	var tracerCount = [];
+	var tracerCount = [].fill(0, 0, nTracers);
 	var maxTracerCount = 0;
 	var tHistory = [];
 	var checks = 0;
@@ -681,7 +681,7 @@ Some very old browsers may not even be able to display the slider controls.</p>
 
 	function resetTracers() {
 		maxTracerCount = 0;
-		tracerCount = [];
+		tracerCount = [].fill(0, 0, nTracers);
 		tHistory = [];
 		checks = 0;
 		elapsedTime = 0;
