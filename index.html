@@ -553,7 +553,7 @@ Some very old browsers may not even be able to display the slider controls.</p>
 		}
 	}
 
-	var tracerCount = [0];
+	var tracerCount = [];
 	var maxTracerCount = 0;
 	var tHistory = [];
 	var checks = 0;
@@ -582,8 +582,9 @@ Some very old browsers may not even be able to display the slider controls.</p>
 			if (checks < elapsedTime) {
 				checks++;
 				maxTracerCount = Math.max.apply(null, tracerCount)
-				document.getElementById("tracerCount").innerHTML = (maxTracerCount/(stepCount/elapsedTime)).toFixed(2);
-					var tcount = maxTracerCount / ( stepCount / elapsedTime );
+				var tcount = maxTracerCount / ( stepCount / elapsedTime );
+				console.log(maxTracerCount);
+				document.getElementById("tracerCount").innerHTML = tcount.toFixed(2);
 					if (!Number.isNaN(tcount))
 						tHistory.push(tcount);
 					else 
