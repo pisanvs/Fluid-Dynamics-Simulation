@@ -52,7 +52,7 @@
 -->
 <html data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, #bit-notification-bar-iframe, ::-webkit-calendar-picker-indicator {
-    filter: invert(100%) hue-rotate(180deg) brightness(110%) contrast(90%) !important;
+	filter: invert(100%) hue-rotate(180deg) brightness(110%) contrast(90%) !important;
 }</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
   background-color: var(--darkreader-inline-bgcolor) !important;
 }
@@ -97,59 +97,59 @@
    --darkreader-selection-background: #0055bb;
    --darkreader-selection-text: #fffdfa;
 }</style><style class="darkreader darkreader--root-vars" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">html {
-    background-color: #1a1d1e !important;
+	background-color: #1a1d1e !important;
 }
 html {
-    color-scheme: dark !important;
+	color-scheme: dark !important;
 }
 html, body, input, textarea, select, button, dialog {
-    background-color: #1a1d1e;
+	background-color: #1a1d1e;
 }
 html, body, input, textarea, select, button {
-    border-color: #7f7667;
-    color: #fffdfa;
+	border-color: #7f7667;
+	color: #fffdfa;
 }
 a {
-    color: #38a0ff;
+	color: #38a0ff;
 }
 table {
-    border-color: #5c6467;
+	border-color: #5c6467;
 }
 ::placeholder {
-    color: #c4bcb1;
+	color: #c4bcb1;
 }
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
-    background-color: #464b00 !important;
-    color: #fffdfa !important;
+	background-color: #464b00 !important;
+	color: #fffdfa !important;
 }
 ::-webkit-scrollbar {
-    background-color: #232728;
-    color: #bcb4a8;
+	background-color: #232728;
+	color: #bcb4a8;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #4c5155;
+	background-color: #4c5155;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #60676c;
+	background-color: #60676c;
 }
 ::-webkit-scrollbar-thumb:active {
-    background-color: #4f5659;
+	background-color: #4f5659;
 }
 ::-webkit-scrollbar-corner {
-    background-color: #1a1d1e;
+	background-color: #1a1d1e;
 }
 * {
-    scrollbar-color: #4c5155 #232728;
+	scrollbar-color: #4c5155 #232728;
 }
 ::selection {
-    background-color: #0055bb !important;
-    color: #fffdfa !important;
+	background-color: #0055bb !important;
+	color: #fffdfa !important;
 }
 ::-moz-selection {
-    background-color: #0055bb !important;
-    color: #fffdfa !important;
+	background-color: #0055bb !important;
+	color: #fffdfa !important;
 }</style>
 <title>Fluid Dynamics Simulation</title>
 <meta charset="utf-8">
@@ -164,32 +164,32 @@ select:-webkit-autofill {
 	li {text-align:left;}
 </style><style class="darkreader darkreader--sync" media="screen"></style>
 <meta name="darkreader" content="84ec2cdf410a4ffeaa89c37c22029ddc"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
-    background-color: #875b00 !important;
-    border-color: #edc115 !important;
-    color: #ffffdc !important;
+	background-color: #875b00 !important;
+	border-color: #edc115 !important;
+	color: #ffffdc !important;
 }
 #vimvixen-console-frame {
-    color-scheme: light !important
+	color-scheme: light !important
 }
 ::placeholder {
-    opacity: 0.5 !important;
+	opacity: 0.5 !important;
 }
 #edge-translate-panel-body,
 .MuiTypography-body1,
 .nfe-quote-text {
-    color: var(--darkreader-neutral-text) !important;
+	color: var(--darkreader-neutral-text) !important;
 }
 gr-main-header {
-    background-color: #11404f !important;
+	background-color: #11404f !important;
 }
 .tou-z65h9k,
 .tou-mignzq,
 .tou-1b6i2ox,
 .tou-lnqlqk {
-    background-color: var(--darkreader-neutral-background) !important;
+	background-color: var(--darkreader-neutral-background) !important;
 }
 .tou-75mvi {
-    background-color: #03232d !important;
+	background-color: #03232d !important;
 }
 .tou-ta9e87,
 .tou-1w3fhi0,
@@ -198,13 +198,13 @@ gr-main-header {
 .tou-1lpmd9d,
 .tou-1frrtv8,
 .tou-17ezmgn {
-    background-color: #0b0b0b !important;
+	background-color: #0b0b0b !important;
 }
 .tou-uknfeu {
-    background-color: #261803 !important;
+	background-color: #261803 !important;
 }
 .tou-6i3zyv {
-    background-color: #1c6077 !important;
+	background-color: #1c6077 !important;
 }
 div.mermaid-viewer-control-panel .btn {
   fill: var(--darkreader-neutral-text);
@@ -250,6 +250,11 @@ div.mermaid .actor {
 <div style="margin-top:4px">
 	Tracer Count:
 	<span id="tracerCount">0</span>(s)
+	<button type="reset" onclick="resetTracers()">Reset</button>
+	<button onclick="plotTracerCount()">Plot</button>
+</div>
+<div>
+	<canvas id="plot" hidden></canvas>
 </div>
 <canvas id="theCanvas" width="600" height="240">This application runs only in modern
 browsers. For best results, use Google Chrome.</canvas>
@@ -723,6 +728,8 @@ Some very old browsers may not even be able to display the slider controls.</p>
 
 	var tracerCount = [0];
 	var maxTracerCount = 0;
+	var tHistory = [];
+	var checks = 0;
 
 	// Move the tracer particles:
 	function moveTracers() {
@@ -738,18 +745,119 @@ Some very old browsers may not even be able to display the slider controls.</p>
 				tracerCount[t] = -1
 			}
 			// check if tracer is inside center box
-			if (tracerX[t] < tracerBeginX+xdim*0.13 && tracerX[t] > tracerBeginX-xdim*0.13 && tracerCount[t] != -1) {
+			if (tracerX[t] < tracerBeginX+xdim*0.18 && tracerX[t] > tracerBeginX-xdim*0.18 && tracerCount[t] != -1) {
 				tracerCount[t]++;
 			} else {
 				tracerCount[t] = 0;
 			}
 
 			// check biggest tracer count
-			if (stepCount % 30 == 0) {
+			if (checks < elapsedTime) {
+				checks++;
 				maxTracerCount = Math.max.apply(null, tracerCount)
 				document.getElementById("tracerCount").innerHTML = (maxTracerCount/(stepCount/elapsedTime)).toFixed(2);
+					var tcount = maxTracerCount / ( stepCount / elapsedTime );
+					if (!Number.isNaN(tcount))
+						tHistory.push(tcount);
+					else 
+						tHistory.push(0);
 			}
+			
+
 		}
+	}
+	var interval;
+	var isPlotting = false;
+
+	
+	function plotTracerCount() {
+		if (!isPlotting) {
+			const canvas = document.getElementById("plot");
+			canvas.hidden = false
+			const ctx = canvas.getContext("2d");
+
+			const canvasWidth = canvas.width;
+			const canvasHeight = canvas.height;
+
+			function drawYAxisScale(maxYScale) {
+				const canvasHeight = canvas.height;
+				const scaleCount = 5; // Number of scale divisions
+				
+				// Draw Y-axis lines and labels
+				for (let i = 0; i <= scaleCount; i++) {
+					const y = (i / scaleCount) * canvasHeight;
+					const label = ((1 - i / scaleCount) * maxYScale).toFixed(0) // Reverse the label to match the Y-axis direction
+				
+					// Draw Y-axis line
+					ctx.beginPath();
+					ctx.moveTo(0, y);
+					ctx.lineTo(10, y);
+					ctx.strokeStyle = "#000";
+					ctx.lineWidth = 1;
+					ctx.stroke();
+				
+					// Draw Y-axis label
+					ctx.font = "10px Arial";
+					ctx.fillStyle = "#000";
+					ctx.fillText(label, 15, y + 4);
+					ctx.closePath();
+				}
+			}
+
+
+			isPlotting = true;
+			function plot() {
+				const xIncrement = canvasWidth / (tHistory.length - 1);
+				const maxValue = Math.max.apply(null, tHistory);
+				const maxYScale = (Math.ceil(maxValue/10)*10)
+				// Clear the canvas
+				ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+				// Begin path
+				ctx.beginPath();
+
+				// Move to the starting point
+				ctx.moveTo(0, canvasHeight - (tHistory[0] / maxYScale) * canvasHeight);
+
+				// Loop through the values and draw lines
+				for (let i = 1; i < tHistory.length; i++) {
+					const x = i * xIncrement;
+					var y = canvasHeight - (tHistory[i] / maxYScale) * canvasHeight; // Normalize to fit within canvas
+					y = Number.isNaN(y) ? canvasHeight : y;
+				
+					// Draw a line to the next point
+					ctx.lineTo(x, y);
+				}
+
+				// Set line color and width
+				ctx.strokeStyle = "green";
+				ctx.lineWidth = 2;
+
+				// Draw the line
+				ctx.stroke();
+				
+				drawYAxisScale(maxYScale);
+
+				// Close the path
+				ctx.closePath();
+				if (isPlotting)
+					setTimeout(plot, 1000)
+			}
+			plot()
+		} else {
+			const canvas = document.getElementById("plot");
+			canvas.hidden = true;
+			isPlotting = false;
+		}
+	}
+
+	function resetTracers() {
+		maxTracerCount = 0;
+		tracerCount = [];
+		tHistory = [];
+		checks = 0;
+		elapsedTime = 0;
+		resetTimer();
 	}
 
 	// "Drag" the fluid in a direction determined by the mouse (or touch) motion:
@@ -1308,6 +1416,6 @@ Some very old browsers may not even be able to display the slider controls.</p>
 		}
 	}
 </script>
-    
+	
 
 </body></html>
